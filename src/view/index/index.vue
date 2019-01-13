@@ -2,59 +2,211 @@
     <div id="app2">
         <div class="all">
             <div class="header">
-                <label>优荃电子公司</label>
+                <label>优荃电子科技有限公司</label>
+                <!--<div class="search"><input placeholder="请输入关键字" clearable/></div>-->
+                <div class="search">服务热线：400-12345678
+                    <Input search placeholder="请输入关键字"/></div>
             </div>
             <div class="navigate">
-                <table>
-                    <td>首&nbsp;&nbsp;&nbsp;&nbsp;页</td>
-                    <td>关于优荃</td>
-                    <td>产品中心</td>
-                    <td>应用方案</td>
-                    <td>合作伙伴</td>
-                    <td>新闻资讯</td>
-                    <td>人力资源</td>
-                    <td>联系我们</td>
+                <table class="navigate_table">
+                    <td class="navigate_td"><font color="white">首&nbsp;&nbsp;&nbsp;&nbsp;页</font></td>
+                    <td class="navigate_td"><font color="white">关于优荃</font></td>
+                    <td class="navigate_td"><font color="white">产品中心</font></td>
+                    <td class="navigate_td"><font color="white">应用方案</font></td>
+                    <td class="navigate_td"><font color="white">合作伙伴</font></td>
+                    <td class="navigate_td"><font color="white">新闻资讯</font></td>
+                    <td class="navigate_td"><font color="white">人力资源</font></td>
+                    <td class="navigate_td"><font color="white">联系我们</font></td>
                 </table>
             </div>
             <div>
                 <Carousel autoplay v-model="value2" loop>
                     <CarouselItem>
-                        <div class="demo-carousel">1
-                            <!--<img src="http://www.paceic.com/FileUp/image/20130927/20130927103844_7539.jpg"/>-->
+                        <div class="demo-carousel">
+                            <img src="http://www.paceic.com/FileUp/image/20130927/20130927103844_7539.jpg"/>
                         </div>
                     </CarouselItem>
                     <CarouselItem>
-                        <div class="demo-carousel">2
-                            <!--<img src="http://www.paceic.com/FileUp/image/20180712/20180712173627_6822.jpg"/>-->
+                        <div class="demo-carousel">
+                            <img src="http://www.paceic.com/FileUp/image/20180712/20180712173627_6822.jpg"/>
                         </div>
                     </CarouselItem>
                     <CarouselItem>
-                        <div class="demo-carousel">3</div>
+                        <div class="demo-carousel">
+                            <img src="http://www.paceic.com/FileUp/image/20140709/20140709085313_7812.png"/>
+                        </div>
                     </CarouselItem>
                     <CarouselItem>
-                        <div class="demo-carousel">4</div>
+                        <div class="demo-carousel">
+                            <img src="http://www.paceic.com/FileUp/image/20130927/20130927103625_3599.jpg"/>
+                        </div>
                     </CarouselItem>
                 </Carousel>
             </div>
-            <div>产品目录</div>
-            <div>尾部</div>
-            <div><a href="#/login">登录页</a></div>
-            <div><a href="#/success">成功页</a></div>
+            <div class="catalog">
+                <div class="catalog_table1 catalog_table">
+                    <div class="catalog_cpml">产品目录</div>
+                    <div>
+                        <div class="catalog_td catalog_td1">
+                            <div><li>电源管理</li></div>
+                            <div>
+                                <ul>
+                                    <li>DC-DC降压</li>
+                                    <li>DC-DC升压</li>
+                                    <li>AC-DC</li>
+                                    <li>复位IC</li>
+                                    <li>LDO</li>
+                                    <li>LED驱动</li>
+                                    <li>锂电充电管理</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog_td catalog_td2">
+                            <div><li>分立器件</li></div>
+                            <div>
+                                <ul>
+                                    <li>二三极管</li>
+                                    <li>MOS管</li>
+                                    <li>EEPROM</li>
+                                    <li>陶瓷散热片</li>
+                                    <li>逻辑芯片</li>
+                                    <li>SPI Flash</li>
+                                    <li>霍尔器件</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog_td catalog_td3">
+                            <div><li>MCU</li></div>
+                            <div>
+                                <ul>
+                                    <li>ST MCU/8位/32位</li>
+                                    <li>精简指令单片机</li>
+                                    <li>USB HOST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog_td catalog_td4">
+                            <div><li>音频放大</li></div>
+                            <div>
+                                <ul>
+                                    <li>AB类</li>
+                                    <li>CLASS &nbsp; D类</li>
+                                    <li>数字功放</li>
+                                    <li>DSP</li>
+                                </ul>
+                            </div></div>
+                    </div>
+
+                </div>
+                <div class="catalog_table2 catalog_table">
+                    <div class="catalog_yyfa">应用方案</div>
+                    <div>
+                        <ul>
+                            <li>3D指纹识别模块</li>
+                            <li>LORA模块</li>
+                            <li>BMS锂电池保护板</li>
+                            <li>BLE蓝牙模块</li>
+                            <li>无刷电机&控制板PCBA</li>
+                            <li>PLC</li>
+                            <li>电池</li>
+                            <li>音响</li>
+                            <li>LED照明</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_menu">
+                <div class="copy_menu_lb">
+                    <div>关于优荃</div>
+                    <div>
+                        <ul>
+                            <li>公司简介</li>
+                            <li>企业文化</li>
+                            <li>荣誉资质</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy_menu_lb">
+                    <div>产品中心</div>
+                    <div>
+                        <ul>
+                            <li>推荐产品</li>
+                            <li>电源管理</li>
+                            <li>分立器件</li>
+                            <li>MCU</li>
+                            <li>音频放大</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy_menu_lb">
+                    <div>应用方案</div>
+                    <div>
+                        <ul>
+                            <li>推荐方案</li>
+                            <li>3D指纹识别模块</li>
+                            <li>LORA模块</li>
+                            <li>BMS锂电池保护模块</li>
+                            <li>BLE蓝牙模块</li>
+                            <li>LED照明</li>
+                            <li>移动电源</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy_menu_lb">
+                    <div>新闻资讯</div>
+                    <div>
+                        <ul>
+                            <li>公司动态</li>
+                            <li>行业资讯</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy_menu_lb">
+                    <div>人力资源</div>
+                    <div>
+                        <ul>
+                            <li>招聘职位</li>
+                            <li>致英才</li>
+                            <li>员工风采</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy_menu_lb">
+                    <div>联系我们</div>
+                    <div>
+                        <ul>
+                            <li>深圳总部</li>
+                            <li>上海分部</li>
+                            <li>北京分部</li>
+                            <li>成都分部</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <span>Copyright © 2019 深圳市优荃电子科技有限公司版权所有. All Rights reserved</span>
+                <span style="float: right;color: #666;">热线电话：0755-12345678</span>
+            </div>
+            <div class="footer">
+
+            </div>
+            <!--<div><a href="#/login">登录页</a></div>
+            <div><a href="#/success">成功页</a></div>-->
         </div>
     </div>
 </template>
 
 
 <script>
-    import Vue from 'vue';
-    import iView from 'iview';
-    import 'iview/dist/styles/iview.css';
+
+
 
 
     export default {
         data () {
             return {
-                value2: 0
+                value2: 0,
+                theme1: 'dark'
 /*
                 value2: [
                     'http://www.paceic.com//FileUp/image/20130927/20130927103844_7539.jpg'
@@ -71,15 +223,133 @@
         width: 50%;
         margin:0 auto;
         .header {
-            background: aqua;
+            /*background: aqua;*/
             height: 100px;
         }
-        table {
+        .navigate_table {
             width: 100%;
+            background: #6F6F6F;
         }
-        td {
-           width: 13%;
+        .navigate {
+            height: 50px;
         }
+        .navigate_td {
+            width: 12%;
+            height: 40px;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .catalog {
+            width: 100%;
+            height: 350px;
+            .catalog_table1{
+                width: 70%;
+            }
+            .catalog_title{
+                color: #DA251E;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            ul {
+                margin-top: 15px;
+            }
+            li {
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+
+        }
+        .catalog_table1 {
+            width: 200px;
+            height: 350px;
+            border: 1px solid #d7d7d7;
+        }
+        .catalog_table2{
+            width: 29%;
+            margin-left: 1%;
+            height: 350px;
+            border: 1px solid #d7d7d7;
+            li{
+                width: 85%;
+                height: 23px;
+                border-bottom: 1px dotted #CCC;
+                line-height:10px;
+            }
+        }
+        .catalog_table {
+            float: left;
+            .catalog_cpml {
+                color: #DA251E;
+                font-size: 16px;
+                font-weight: bold;
+                height: 35px;
+                line-height: 35px;
+                margin-left: 10px;
+            }
+            .catalog_yyfa {
+                color: #DA251E;
+                font-size: 16px;
+                font-weight: bold;
+                height: 35px;
+                line-height: 35px;
+                margin-left: 10px;
+            }
+        }
+        .catalog_td {
+            float: left;
+            border-top: 1px solid #d7d7d7;
+            border-right: 1px solid #d7d7d7;
+            height: 313px;
+            width: 25%;
+            div:first-of-type{
+                color: black;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+        .catalog_yyfa {
+            border-bottom: 1px solid #d7d7d7;
+
+        }
+        .copy_menu {
+            margin-top: 10px;
+            height: 270px;
+            border: 1px solid #d7d7d7;
+        }
+        .copy_menu_lb {
+            float: left;
+            width: 16.6%;
+            div:first-of-type{
+                color: black;
+                font-size: 12px;
+                font-weight: bold;
+                margin-left: 20px;
+                margin-top: 15px;
+            }
+            ul {
+                margin-top: 10px;
+            }
+            li {
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+        }
+        .copy{
+            margin-top: 20px;
+        }
+        .footer{
+            height: 30px;
+        }
+
+
+    }
+    .search {
+        width: 200px;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 79%;
     }
 
 
