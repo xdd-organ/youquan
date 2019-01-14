@@ -20,8 +20,8 @@ let routes = [
 ]
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-    ? '/'
-    : '/'
+    ? '/youquan/'
+    : '/youquan/'
 
 Vue.use(Router)
 const router = new Router({

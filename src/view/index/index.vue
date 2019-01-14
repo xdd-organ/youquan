@@ -2,14 +2,15 @@
     <div id="app2">
         <div class="all">
             <div class="header">
-                <label>优荃电子科技有限公司</label>
+                <span class="group_name">深圳市优荃电子有限公司</span>
                 <!--<div class="search"><input placeholder="请输入关键字" clearable/></div>-->
-                <div class="search">服务热线：400-12345678
-                    <Input search placeholder="请输入关键字"/></div>
+                <div class="search">服务热线：13802570139
+                    <Input search placeholder="请输入关键字"/>
+                </div>
             </div>
             <div class="navigate">
                 <table class="navigate_table">
-                    <td class="navigate_td"><font color="white">首&nbsp;&nbsp;&nbsp;&nbsp;页</font></td>
+                    <td class="navigate_td"><font color="white"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></font></td>
                     <td class="navigate_td"><font color="white">关于优荃</font></td>
                     <td class="navigate_td"><font color="white">产品中心</font></td>
                     <td class="navigate_td"><font color="white">应用方案</font></td>
@@ -176,17 +177,15 @@
                     <div>
                         <ul>
                             <li>深圳总部</li>
-                            <li>上海分部</li>
-                            <li>北京分部</li>
-                            <li>成都分部</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="copy">
-                <span>Copyright © 2019 深圳市优荃电子科技有限公司版权所有. All Rights reserved</span>
-                <span style="float: right;color: #666;">热线电话：0755-12345678</span>
+                <span>Copyright © 2019 深圳市优荃电子有限公司版权所有. All Rights reserved</span>
+                <span style="float: right;color: #666;">热线电话：0755-82240760</span>
             </div>
+            <footer></footer>
             <div class="footer">
 
             </div>
@@ -199,10 +198,13 @@
 
 <script>
 
-
-
+    import footer1 from '@/components/footer/footer.vue'
 
     export default {
+        name: 'index',
+        components:{
+            footer1
+        },
         data () {
             return {
                 value2: 0,
@@ -225,6 +227,11 @@
         .header {
             /*background: aqua;*/
             height: 100px;
+            margin-top: 10px;
+        }
+        .group_name {
+            font-size: 30px;
+            font-weight: bold;
         }
         .navigate_table {
             width: 100%;
@@ -348,8 +355,11 @@
     .search {
         width: 200px;
         height: 30px;
-        margin-top: 30px;
         margin-left: 79%;
+    }
+    a {
+        text-decoration:none;
+        color:inherit;
     }
 
 
