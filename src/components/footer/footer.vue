@@ -7,7 +7,7 @@
 
 <script>
     export default {
-        name: "footer1",
+        name: "footerIndex",
         props: {
             theme: {
                 type: String,

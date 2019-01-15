@@ -1,49 +1,9 @@
 <template>
     <div id="app2">
         <div class="all">
-            <div class="header">
-                <span class="group_name">深圳市优荃电子有限公司</span>
-                <!--<div class="search"><input placeholder="请输入关键字" clearable/></div>-->
-                <div class="search">服务热线：13802570139
-                    <Input search placeholder="请输入关键字"/>
-                </div>
-            </div>
-            <div class="navigate">
-                <table class="navigate_table">
-                    <td class="navigate_td"><font color="white"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></font></td>
-                    <td class="navigate_td"><font color="white">关于优荃</font></td>
-                    <td class="navigate_td"><font color="white">产品中心</font></td>
-                    <td class="navigate_td"><font color="white">应用方案</font></td>
-                    <td class="navigate_td"><font color="white">合作伙伴</font></td>
-                    <td class="navigate_td"><font color="white">新闻资讯</font></td>
-                    <td class="navigate_td"><font color="white">人力资源</font></td>
-                    <td class="navigate_td"><font color="white">联系我们</font></td>
-                </table>
-            </div>
-            <div>
-                <Carousel autoplay v-model="value2" loop>
-                    <CarouselItem>
-                        <div class="demo-carousel">
-                            <img src="http://www.paceic.com/FileUp/image/20130927/20130927103844_7539.jpg"/>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                        <div class="demo-carousel">
-                            <img src="http://www.paceic.com/FileUp/image/20180712/20180712173627_6822.jpg"/>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                        <div class="demo-carousel">
-                            <img src="http://www.paceic.com/FileUp/image/20140709/20140709085313_7812.png"/>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem>
-                        <div class="demo-carousel">
-                            <img src="http://www.paceic.com/FileUp/image/20130927/20130927103625_3599.jpg"/>
-                        </div>
-                    </CarouselItem>
-                </Carousel>
-            </div>
+            <headerIndex></headerIndex>
+            <navigateIndex></navigateIndex>
+            <carousel></carousel>
             <div class="catalog">
                 <div class="catalog_table1 catalog_table">
                     <div class="catalog_cpml">产品目录</div>
@@ -181,11 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="copy">
-                <span>Copyright © 2019 深圳市优荃电子有限公司版权所有. All Rights reserved</span>
-                <span style="float: right;color: #666;">热线电话：0755-82240760</span>
-            </div>
-            <footer></footer>
+            <footerIndex></footerIndex>
             <div class="footer">
 
             </div>
@@ -198,12 +154,15 @@
 
 <script>
 
-    import footer1 from '@/components/footer/footer.vue'
+    import footerIndex from '@/components/footer/footer.vue'
+    import headerIndex from '@/components/header/header.vue'
+    import navigateIndex from '@/components/navigate/navigate.vue'
+    import carousel from '@/components/carousel/carousel.vue'
 
     export default {
         name: 'index',
         components:{
-            footer1
+            footerIndex, headerIndex, navigateIndex, carousel
         },
         data () {
             return {
@@ -224,30 +183,7 @@
     .all {
         width: 50%;
         margin:0 auto;
-        .header {
-            /*background: aqua;*/
-            height: 100px;
-            margin-top: 10px;
-        }
-        .group_name {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        .navigate_table {
-            width: 100%;
-            background: #6F6F6F;
-        }
-        .navigate {
-            height: 50px;
-        }
-        .navigate_td {
-            width: 12%;
-            height: 40px;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 15px;
-            font-weight: bold;
-        }
+
         .catalog {
             width: 100%;
             height: 350px;
@@ -343,24 +279,13 @@
                 margin-top: 10px;
             }
         }
-        .copy{
-            margin-top: 20px;
-        }
         .footer{
             height: 30px;
         }
 
 
     }
-    .search {
-        width: 200px;
-        height: 30px;
-        margin-left: 79%;
-    }
-    a {
-        text-decoration:none;
-        color:inherit;
-    }
+
 
 
 </style>
