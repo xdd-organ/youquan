@@ -181,7 +181,7 @@
 <style lang="less" scoped>
 
     .all {
-        width: 50%;
+        width: 950px;
         margin:0 auto;
 
         .catalog {

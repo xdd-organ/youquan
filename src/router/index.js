@@ -18,6 +18,11 @@ let routes = [
         component: () => import('@/view/success/success.vue')
     },
     {
+        path: '/about',
+        name: 'about',
+        component: () => import('@/view/about/about.vue')
+    },
+    {
         path: '/article/:id',
         name: 'article',
         component: () => import('@/view/article/article.vue')
