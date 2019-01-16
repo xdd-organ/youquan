@@ -17,6 +17,11 @@ let routes = [
         name: 'success',
         component: () => import('@/view/success/success.vue')
     },
+    {
+        path: '/article/:id',
+        name: 'article',
+        component: () => import('@/view/article/article.vue')
+    }
 ]
 
 const BASE_URL = process.env.NODE_ENV === 'production'
