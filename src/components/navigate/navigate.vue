@@ -1,14 +1,14 @@
 <template>
     <div class="navigate">
         <table class="navigate_table">
-            <td class="navigate_td"><font color="white"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></font></td>
-            <td class="navigate_td"><font color="white"><a href="#/about">关于优荃</a></font></td>
-            <td class="navigate_td"><font color="white">产品中心</font></td>
-            <td class="navigate_td"><font color="white">应用方案</font></td>
-            <td class="navigate_td"><font color="white">合作伙伴</font></td>
-            <td class="navigate_td"><font color="white">新闻资讯</font></td>
-            <td class="navigate_td"><font color="white">人力资源</font></td>
-            <td class="navigate_td"><font color="white">联系我们</font></td>
+            <td class="navigate_td"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></td>
+            <td class="navigate_td"><a href="#/about">关于优荃</a></td>
+            <td class="navigate_td"><a href="#/scheme">产品中心</a></td>
+            <td class="navigate_td"><a href="#/scheme">应用方案</a></td>
+            <td class="navigate_td">合作伙伴</td>
+            <td class="navigate_td">新闻资讯</td>
+            <td class="navigate_td">人力资源</td>
+            <td class="navigate_td">联系我们</td>
         </table>
     </div>
 </template>
@@ -43,6 +43,11 @@
         text-align: center;
         font-size: 15px;
         font-weight: bold;
+        color: white;
+    }
+    .navigate_td:hover{
+        background: white;
+        color: black;
     }
     a {
         text-decoration:none;

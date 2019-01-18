@@ -26,6 +26,11 @@ let routes = [
         path: '/article/:id',
         name: 'article',
         component: () => import('@/view/article/article.vue')
+    },
+    {
+        path: '/scheme',
+        name: 'scheme',
+        component: () => import('@/view/scheme/scheme.vue')
     }
 ]
 
