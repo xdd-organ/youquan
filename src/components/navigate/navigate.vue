@@ -8,7 +8,7 @@
             <td class="navigate_td">合作伙伴</td>
             <td class="navigate_td">新闻资讯</td>
             <td class="navigate_td">人力资源</td>
-            <td class="navigate_td">联系我们</td>
+            <td class="navigate_td"><a href="#/contact">联系我们</a></td>
         </table>
     </div>
 </template>

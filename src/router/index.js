@@ -31,6 +31,11 @@ let routes = [
         path: '/scheme',
         name: 'scheme',
         component: () => import('@/view/scheme/scheme.vue')
+    },
+    {
+        path: '/contact',
+        name: 'contact',
+        component: () => import('@/view/contact/contact.vue')
     }
 ]
 

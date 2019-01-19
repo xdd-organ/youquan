@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <span class="group_name">优荃电子有限公司</span>
+        <span class="group_name">优荃电子</span>
         <!--<div class="search"><input placeholder="请输入关键字" clearable/></div>-->
         <div class="search">服务热线：13802570139
             <Input search placeholder="请输入关键字"/>
