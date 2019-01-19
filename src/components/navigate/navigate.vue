@@ -3,8 +3,7 @@
         <table class="navigate_table">
             <td class="navigate_td"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></td>
             <td class="navigate_td"><a href="#/about">关于优荃</a></td>
-            <td class="navigate_td"><a href="#/scheme">产品中心</a></td>
-            <td class="navigate_td"><a href="#/scheme">应用方案</a></td>
+            <td class="navigate_td"><a href="#/product">产品中心</a></td>
             <td class="navigate_td">合作伙伴</td>
             <td class="navigate_td">新闻资讯</td>
             <td class="navigate_td">人力资源</td>
@@ -37,7 +36,6 @@
         height: 50px;
     }
     .navigate_td {
-        width: 12%;
         height: 40px;
         vertical-align: middle;
         text-align: center;

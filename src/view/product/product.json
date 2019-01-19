@@ -1,0 +1,193 @@
+[
+  [
+    {
+      "title_one": "DC-DC",
+      "title_two": "异步升压、同步升压、异步降压、同步降压、升降压、车充专用"
+    },
+    {
+      "title_one": "AC-DC",
+      "title_two": "AC-DC原边反馈、AC-DC副边反馈、AC-DC非隔离驱动、同步整流、其他"
+    },
+    {
+      "title_one": "LDO",
+      "title_two": "LDO"
+    },
+    {
+      "title_one": "电池充电",
+      "title_two": "单节电池充电、双节电池充电、多节电池充电、多合一锂电池充电、铅酸电池充电、锂电转干电池"
+    },
+    {
+      "title_one": "锂电池保护",
+      "title_two": "单节锂电池保护、多节锂电池保护"
+    },
+    {
+      "title_one": "电池电量指示芯片",
+      "title_two": "单节电池电量指示芯片，多节电池电量指示芯片"
+    },
+    {
+      "title_one": "Type-c",
+      "title_two": "Type-c检测与控制"
+    },
+    {
+      "title_one": "USB充电芯片控制",
+      "title_two": "单通道USB充电芯片控制、双通道USB充电芯片控制"
+    },
+    {
+      "title_one": "USB限流开关",
+      "title_two": "单路USB限流开关、双路USB限流开关"
+    },
+    {
+      "title_one": "LED白光驱动",
+      "title_two": "LED白光驱动"
+    },
+    {
+      "title_one": "LED背光驱动",
+      "title_two": "LED背光驱动"
+    },
+    {
+      "title_one": "LED照明驱动",
+      "title_two": "LED照明DC-DC驱动、LED照明AC-DC驱动、LED照明线性驱动"
+    },
+    {
+      "title_one": "三端稳压",
+      "title_two": "三端稳压"
+    },
+    {
+      "title_one": "电荷泵",
+      "title_two": "电荷泵"
+    },
+    {
+      "title_one": "电压检测",
+      "title_two": "电压检测"
+    },
+    {
+      "title_one": "电压复位",
+      "title_two": "电压复位"
+    },
+    {
+      "title_one": "基准电压源",
+      "title_two": "基准电压源"
+    },
+    {
+      "title_one": "移动电源集成芯片",
+      "title_two": "移动电源集成芯片"
+    },
+    {
+      "title_one": "PMU",
+      "title_two": "PMU"
+    },
+    {
+      "title_one": "LNB",
+      "title_two": "单通道LNB、双通道LNB"
+    },
+    {
+      "title_one": "其他",
+      "title_two": "脉宽调控电路、线性稳压阀、过压过流保护芯片、栅极驱动专用芯片、双通道CC/VC模式切换控制器、单通道功率MOS驱动芯片、Bus总线调整器"
+    }
+
+  ],
+  [
+    {
+      "title_one": "视频DAC",
+      "title_two": "视频DAC"
+    },
+    {
+      "title_one": "视频ADC",
+      "title_two": "视频ADC"
+    },
+    {
+      "title_one": "视频放大",
+      "title_two": "单路视频放大、多路视频放大"
+    },
+    {
+      "title_one": "音视频解码",
+      "title_two": "音视频解码"
+    },
+    {
+      "title_one": "其他",
+      "title_two": "模拟卫星电视信号解调、视频同步分离器、OSD电路、B/W电视场同步偏转电路"
+    }
+  ],
+  [
+    {
+      "title_one": "三极管",
+      "title_two": "NPN、PNP"
+    },
+    {
+      "title_one": "二极管",
+      "title_two": "肖特基二极管、整流二极管、快恢复二极管、稳压二极管、恒流二极管"
+    },
+    {
+      "title_one": "保护器件",
+      "title_two": "防雷管、TVS、ESD、超低电容阵列ESD、保险丝、漏电保护开关电路"
+    },
+    {
+      "title_one": "MOS管",
+      "title_two": "N沟道MOS、P沟道MOS、双N沟道MOS、双P沟道MOS、N+P沟道MOS"
+    },
+    {
+      "title_one": "桥堆/整流桥",
+      "title_two": "桥堆/整流桥"
+    },
+    {
+      "title_one": "可控硅",
+      "title_two": "单向可控硅、双向可控硅"
+    },
+    {
+      "title_one": "IGBT",
+      "title_two": "IGBT"
+    },
+    {
+      "title_one": "达林顿管",
+      "title_two": "达林顿管"
+    }
+  ],
+  [
+    {
+      "title_one": "Mask MCU",
+      "title_two": "8位Mask MCU、16位Mask MCU、32位Mask MCU"
+    },
+    {
+      "title_one": "OPT MCU",
+      "title_two": "8位OPT MCU、16位OPT MCU、32位OPT MCU"
+    },
+    {
+      "title_one": "Flash MCU",
+      "title_two": "8位Flash MCU、16位Flash MCU、32位Flash MCU"
+    },
+    {
+      "title_one": "DSP",
+      "title_two": "通用型DSP、专用型DSP"
+    }
+  ],
+  [
+    {
+      "title_one": "光耦",
+      "title_two": "光耦"
+    },
+    {
+      "title_one": "红外接收管",
+      "title_two": "红外接收管"
+    },
+    {
+      "title_one": "红外发射管",
+      "title_two": "红外发射管"
+    },
+    {
+      "title_one": "LED发射管",
+      "title_two": "LED发射管"
+    },
+    {
+      "title_one": "红外滤波",
+      "title_two": "红外滤波开关驱动芯片"
+    },
+    {
+      "title_one": "红外传感",
+      "title_two": "红外传感信号处理器"
+    },
+    {
+      "title_one": "红外热释电专用芯片",
+      "title_two": "红外热释电专用芯片"
+    }
+  ]
+]

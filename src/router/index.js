@@ -36,12 +36,17 @@ let routes = [
         path: '/contact',
         name: 'contact',
         component: () => import('@/view/contact/contact.vue')
+    },
+    {
+        path: '/product',
+        name: 'product',
+        component: () => import('@/view/product/product.vue')
     }
 ]
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-    ? '/youquan/'
-    : '/youquan/'
+    ? '/'
+    : '/'
 
 Vue.use(Router)
 const router = new Router({
