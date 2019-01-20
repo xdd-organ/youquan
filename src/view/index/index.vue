@@ -200,6 +200,11 @@
                 border-bottom: 1px dotted #CCC;
                 line-height:10px;
             }
+            ul {
+                li:hover {
+                    color: #2baee9;
+                }
+            }
         }
         .catalog_table {
             float: left;
