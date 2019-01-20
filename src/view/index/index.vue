@@ -231,6 +231,11 @@
                 font-size: 12px;
                 font-weight: bold;
             }
+            ul {
+                li:hover {
+                    color: #2baee9;
+                }
+            }
         }
         .catalog_td4{
             border-right: 1px none #d7d7d7;
@@ -260,6 +265,9 @@
             li {
                 margin-left: 20px;
                 margin-top: 10px;
+            }
+            li:hover {
+                color: #2baee9;
             }
         }
         .footer{

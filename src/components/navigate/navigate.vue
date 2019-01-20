@@ -1,13 +1,13 @@
 <template>
     <div class="navigate">
         <table class="navigate_table">
-            <td class="navigate_td"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></td>
-            <td class="navigate_td"><a href="#/about">关于优荃</a></td>
-            <td class="navigate_td"><a href="#/product">产品中心</a></td>
-            <td class="navigate_td"><a href="#/partner">合作伙伴</a></td>
-            <td class="navigate_td"><a href="#/news">新闻资讯</a></td>
-            <td class="navigate_td"><a href="#/hr">人力资源</a></td>
-            <td class="navigate_td"><a href="#/contact">联系我们</a></td>
+            <td class="navigate_td" @click="toView(0, 'index')">首&nbsp;&nbsp;&nbsp;&nbsp;页</td>
+            <td class="navigate_td" @click="toView(0, 'about')">关于优荃</td>
+            <td class="navigate_td" @click="toView(0, 'product')">产品中心</td>
+            <td class="navigate_td" @click="toView(0, 'partner')">合作伙伴</td>
+            <td class="navigate_td" @click="toView(0, 'news')">新闻资讯</td>
+            <td class="navigate_td" @click="toView(0, 'hr')">人力资源</td>
+            <td class="navigate_td" @click="toView(0, 'contact')">联系我们</td>
         </table>
     </div>
 </template>
@@ -22,6 +22,14 @@
             }
         },
         methods:{
+            toView: function (index, name) {
+                this.$router.push({
+                    name: name,
+                    params: {
+                        type: index
+                    }
+                })
+            }
         }
     }
 </script>
@@ -46,9 +54,6 @@
     .navigate_td:hover{
         background: white;
         color: black;
-    }
-    a {
-        text-decoration:none;
-        color:inherit;
+        cursor: pointer;
     }
 </style>
