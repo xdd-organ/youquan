@@ -2,7 +2,7 @@
     <div class="all">
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <carousel></carousel>
+        <show></show>
         <div class="news">
             <div class="news_table news_table_lx">
                 <div class="news_table_lxwm">新闻资讯</div>
@@ -29,13 +29,13 @@
     import footerIndex from '@/components/footer/footer.vue'
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
-    import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
     let newsData = require('./news.json');
 
     export default {
         name: "news",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, show
         },
         data(){
             return{
@@ -56,8 +56,12 @@
             }
         },
         created: function () {
-            this.title = this.titleList[0];
-            this.contentList = newsData[0];
+            var type = this.$route.params.type;
+            if (!type) {
+                type = 0;
+            }
+            this.title = this.titleList[type];
+            this.contentList = newsData[type];
         }
 
     }

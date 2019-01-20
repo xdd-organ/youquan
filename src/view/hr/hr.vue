@@ -2,7 +2,7 @@
     <div class="all">
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <carousel></carousel>
+        <show></show>
         <div class="hr">
             <div class="hr_table hr_table_lx">
                 <div class="hr_table_lxwm">人力资源</div>
@@ -26,11 +26,12 @@
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
     import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
 
     export default {
         name: "humanResources",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, show
         },
         data(){
             return{
@@ -54,8 +55,12 @@
             }
         },
         created: function () {
-            this.title = this.titleList[0];
-            this.content = this.contentList[0];
+            var type = this.$route.params.type;
+            if (!type) {
+                type = 0;
+            }
+            this.title = this.titleList[type];
+            this.content = this.contentList[type];
         }
 
     }

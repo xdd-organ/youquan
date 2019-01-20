@@ -2,7 +2,7 @@
     <div class="all">
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <carousel></carousel>
+        <show></show>
         <div class="about">
             <div class="about_table about_table_gy">
                 <div class="about_table_gyyq">关于优荃</div>
@@ -28,11 +28,12 @@
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
     import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
 
     export default {
         name: "about",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, carousel, show
         },
         data(){
             return{
@@ -63,8 +64,12 @@
             }
         },
         created: function () {
-            this.title = this.titleList[0];
-            this.content = this.contentList[0];
+            var type = this.$route.params.type;
+            if (!type) {
+                type = 0;
+            }
+            this.title = this.titleList[type];
+            this.content = this.contentList[type];
         }
     }
 </script>

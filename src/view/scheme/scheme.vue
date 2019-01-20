@@ -2,7 +2,7 @@
     <div class="all">
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <!--<carousel></carousel>-->
+        <show></show>
         <div class="scheme">
             <div class="scheme_table scheme_table_fat">
                 <div class="scheme_table_yyfa">应用方案</div>
@@ -38,13 +38,13 @@
     import footerIndex from '@/components/footer/footer.vue'
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
-    import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
     let schemeData = require('./scheme.json');
 
     export default {
         name: "scheme",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, show
         },
         data(){
             return{

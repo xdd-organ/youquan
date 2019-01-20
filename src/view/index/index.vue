@@ -12,66 +12,42 @@
                             <div><li>电源管理</li></div>
                             <div>
                                 <ul>
-                                    <li>DC-DC降压</li>
-                                    <li>DC-DC升压</li>
-                                    <li>AC-DC</li>
-                                    <li>复位IC</li>
-                                    <li>LDO</li>
-                                    <li>LED驱动</li>
-                                    <li>锂电充电管理</li>
+                                    <li v-for="(item, index) in productList[0].slice(0,9)"><a @click="toView(0, 'product')">{{item.title_one}}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="catalog_td catalog_td2">
-                            <div><li>分立器件</li></div>
+                            <div><li>音频</li></div>
                             <div>
                                 <ul>
-                                    <li>二三极管</li>
-                                    <li>MOS管</li>
-                                    <li>EEPROM</li>
-                                    <li>陶瓷散热片</li>
-                                    <li>逻辑芯片</li>
-                                    <li>SPI Flash</li>
-                                    <li>霍尔器件</li>
+                                    <li v-for="item in productList[1].slice(0,9)"><a @click="toView(1, 'product')">{{item.title_one}}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="catalog_td catalog_td3">
-                            <div><li>MCU</li></div>
+                            <div><li>分立器件</li></div>
                             <div>
                                 <ul>
-                                    <li>ST MCU/8位/32位</li>
-                                    <li>精简指令单片机</li>
-                                    <li>USB HOST</li>
+                                    <li v-for="item in productList[2].slice(0,9)"><a @click="toView(2, 'product')">{{item.title_one}}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="catalog_td catalog_td4">
-                            <div><li>音频放大</li></div>
+                            <div><li>MCU</li></div>
                             <div>
                                 <ul>
-                                    <li>AB类</li>
-                                    <li>CLASS &nbsp; D类</li>
-                                    <li>数字功放</li>
-                                    <li>DSP</li>
+                                    <li v-for="item in productList[3].slice(0,9)"><a @click="toView(3, 'product')">{{item.title_one}}</a></li>
                                 </ul>
-                            </div></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="catalog_table2 catalog_table">
-                    <div class="catalog_yyfa">应用方案</div>
+                    <div class="catalog_yyfa">光电器件</div>
                     <div>
                         <ul>
-                            <li>3D指纹识别模块</li>
-                            <li>LORA模块</li>
-                            <li>BMS锂电池保护板</li>
-                            <li>BLE蓝牙模块</li>
-                            <li>无刷电机&控制板PCBA</li>
-                            <li>PLC</li>
-                            <li>电池</li>
-                            <li>音响</li>
-                            <li>LED照明</li>
+                            <li v-for="item in productList[4].slice(0,9)"><a @click="toView(4, 'product')">{{item.title_one}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,9 +57,9 @@
                     <div>关于优荃</div>
                     <div>
                         <ul>
-                            <li>公司简介</li>
-                            <li>企业文化</li>
-                            <li>荣誉资质</li>
+                            <li><a @click="toView(0, 'about')">公司简介</a></li>
+                            <li><a @click="toView(1, 'about')">企业文化</a></li>
+                            <li><a @click="toView(2, 'about')">荣誉资质</a></li>
                         </ul>
                     </div>
                 </div>
@@ -91,15 +67,15 @@
                     <div>产品中心</div>
                     <div>
                         <ul>
-                            <li>推荐产品</li>
-                            <li>电源管理</li>
-                            <li>分立器件</li>
-                            <li>MCU</li>
-                            <li>音频放大</li>
+                            <li><a @click="toView(0, 'product')">电源管理</a></li>
+                            <li><a @click="toView(1, 'product')">音频</a></li>
+                            <li><a @click="toView(2, 'product')">分立器件</a></li>
+                            <li><a @click="toView(3, 'product')">MCU</a></li>
+                            <li><a @click="toView(4, 'product')">光电器件</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="copy_menu_lb">
+                <!--<div class="copy_menu_lb">
                     <div>应用方案</div>
                     <div>
                         <ul>
@@ -112,13 +88,13 @@
                             <li>移动电源</li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
                 <div class="copy_menu_lb">
                     <div>新闻资讯</div>
                     <div>
                         <ul>
-                            <li>公司动态</li>
-                            <li>行业资讯</li>
+                            <li><a @click="toView(0, 'news')">公司动态</a></li>
+                            <li><a @click="toView(1, 'news')">行业资讯</a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,9 +102,8 @@
                     <div>人力资源</div>
                     <div>
                         <ul>
-                            <li>招聘职位</li>
-                            <li>致英才</li>
-                            <li>员工风采</li>
+                            <li><a @click="toView(0, 'hr')">员工风采</a></li>
+                            <li><a @click="toView(1, 'hr')">致英才</a></li>
                         </ul>
                     </div>
                 </div>
@@ -136,7 +111,7 @@
                     <div>联系我们</div>
                     <div>
                         <ul>
-                            <li>深圳总部</li>
+                            <li><a href="#/contact">深圳总部</a></li>
                         </ul>
                     </div>
                 </div>
@@ -145,8 +120,6 @@
             <div class="footer">
 
             </div>
-            <!--<div><a href="#/login">登录页</a></div>
-            <div><a href="#/success">成功页</a></div>-->
         </div>
     </div>
 </template>
@@ -158,6 +131,7 @@
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
     import carousel from '@/components/carousel/carousel.vue'
+    let productData = require('../product/product.json');
 
     export default {
         name: 'index',
@@ -166,14 +140,20 @@
         },
         data () {
             return {
-                value2: 0,
-                theme1: 'dark'
-/*
-                value2: [
-                    'http://www.paceic.com//FileUp/image/20130927/20130927103844_7539.jpg'
-                ]
-*/
             }
+        },
+        methods:{
+            toView: function (index, name) {
+                this.$router.push({
+                    name: name,
+                    params: {
+                        type: index
+                    }
+                })
+            }
+        },
+        created: function () {
+            this.productList = productData;
         }
     }
 </script>
@@ -237,7 +217,7 @@
                 font-weight: bold;
                 height: 35px;
                 line-height: 35px;
-                margin-left: 10px;
+                padding-left: 10px;
             }
         }
         .catalog_td {
@@ -252,6 +232,9 @@
                 font-weight: bold;
             }
         }
+        .catalog_td4{
+            border-right: 1px none #d7d7d7;
+        }
         .catalog_yyfa {
             border-bottom: 1px solid #d7d7d7;
 
@@ -263,7 +246,7 @@
         }
         .copy_menu_lb {
             float: left;
-            width: 16.6%;
+            width: 20%;
             div:first-of-type{
                 color: black;
                 font-size: 12px;
@@ -282,8 +265,10 @@
         .footer{
             height: 30px;
         }
-
-
+        a {
+            text-decoration:none;
+            color:inherit;
+        }
     }
 
 

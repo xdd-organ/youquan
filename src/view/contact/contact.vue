@@ -4,7 +4,7 @@
         <!--<script async type="javascript" src="http://api.map.baidu.com/api?v=3.0&ak=zDyZneP3vBERNestqdHYzsWQ60KfLDy0"></script>-->
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <carousel></carousel>
+        <show></show>
         <div class="contact">
             <div class="contact_table contact_table_lx">
                 <div class="contact_table_lxwm">联系我们</div>
@@ -44,11 +44,12 @@
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
     import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
 
     export default {
         name: "contact",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, show
         },
         data(){
             return{

@@ -2,7 +2,7 @@
     <div class="all">
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <carousel></carousel>
+        <show></show>
         <div class="partner">
             <div class="partner_table partner_table_lx">
                 <div class="partner_table_lxwm">合作伙伴</div>
@@ -36,13 +36,13 @@
     import footerIndex from '@/components/footer/footer.vue'
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
-    import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
     let partnerData = require('./partner.json');
 
     export default {
         name: "partner",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, show
         },
         data(){
             return{

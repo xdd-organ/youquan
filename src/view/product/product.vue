@@ -2,7 +2,7 @@
     <div class="all">
         <headerIndex></headerIndex>
         <navigateIndex></navigateIndex>
-        <!--<carousel></carousel>-->
+        <show></show>
         <div class="product">
             <div class="product_table product_table_fat">
                 <div class="product_table_cpzx">产品中心</div>
@@ -26,13 +26,14 @@
     import footerIndex from '@/components/footer/footer.vue'
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
-    import carousel from '@/components/carousel/carousel.vue'
+    import show from '@/components/show/show.vue'
+
     let productData = require('./product.json');
 
     export default {
         name: "product",
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, show
         },
         data(){
             return{
@@ -57,8 +58,12 @@
             }
         },
         created: function () {
-            this.title = this.titleList[0];
-            this.titleData = productData[0];
+            var type = this.$route.params.type;
+            if (!type) {
+                type = 0;
+            }
+            this.title = this.titleList[type];
+            this.titleData = productData[type];
         }
     }
 </script>
