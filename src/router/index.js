@@ -41,6 +41,21 @@ let routes = [
         path: '/product',
         name: 'product',
         component: () => import('@/view/product/product.vue')
+    },
+    {
+        path: '/hr',
+        name: 'hr',
+        component: () => import('@/view/hr/hr.vue')
+    },
+    {
+        path: '/partner',
+        name: 'partner',
+        component: () => import('@/view/partner/partner.vue')
+    },
+    {
+        path: '/news',
+        name: 'news',
+        component: () => import('@/view/news/news.vue')
     }
 ]
 

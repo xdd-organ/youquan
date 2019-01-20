@@ -4,9 +4,9 @@
             <td class="navigate_td"><a href="#/">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></td>
             <td class="navigate_td"><a href="#/about">关于优荃</a></td>
             <td class="navigate_td"><a href="#/product">产品中心</a></td>
-            <td class="navigate_td">合作伙伴</td>
-            <td class="navigate_td">新闻资讯</td>
-            <td class="navigate_td">人力资源</td>
+            <td class="navigate_td"><a href="#/partner">合作伙伴</a></td>
+            <td class="navigate_td"><a href="#/news">新闻资讯</a></td>
+            <td class="navigate_td"><a href="#/hr">人力资源</a></td>
             <td class="navigate_td"><a href="#/contact">联系我们</a></td>
         </table>
     </div>
