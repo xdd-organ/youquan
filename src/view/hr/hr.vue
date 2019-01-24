@@ -38,10 +38,12 @@
                 title: "",
                 content: "",
                 titleList: [
+                    "人力资源",
                     "员工风采",
                     "致英才"
                 ],
                 contentList: [
+                    "人力资源",
                     "员工风采",
                     "致英才"
                 ]

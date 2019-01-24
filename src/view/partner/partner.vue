@@ -5,7 +5,7 @@
         <show></show>
         <div class="partner">
             <div class="partner_table partner_table_lx">
-                <div class="partner_table_lxwm">合作伙伴</div>
+                <div class="partner_table_lxwm">代理品牌</div>
                 <ul>
                     <li @click="toView(index)" v-for="(item,index) in titleList">{{item}}</li>
                 </ul>
@@ -49,7 +49,7 @@
                 title: "",
                 content: "",
                 titleList: [
-                    "合作伙伴"
+                    "代理品牌"
                 ],
                 contentList: [],
                 tempList:[]
