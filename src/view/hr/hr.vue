@@ -13,7 +13,8 @@
             <div class="hr_table hr_table_wz">
                 <div class="hr_table_gszb">{{title}}</div>
                 <div class="company_table">
-                    {{content}}
+                    {{content == 'rlzy' ? '' : content}}
+                    <rczy v-if="content == 'rlzy'"></rczy>
                 </div>
             </div>
         </div>
@@ -25,25 +26,25 @@
     import footerIndex from '@/components/footer/footer.vue'
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
-    import carousel from '@/components/carousel/carousel.vue'
+    import rczy from '@/components/hr/hr.vue'
     import show from '@/components/show/show.vue'
 
     export default {
         name: "humanResources",
         components:{
-            footerIndex, headerIndex, navigateIndex, show
+            footerIndex, headerIndex, navigateIndex, show, rczy
         },
         data(){
             return{
                 title: "",
                 content: "",
                 titleList: [
-                    "人力资源",
+                    "人才招聘",
                     "员工风采",
                     "致英才"
                 ],
                 contentList: [
-                    "人力资源",
+                    "rlzy",
                     "员工风采",
                     "致英才"
                 ]

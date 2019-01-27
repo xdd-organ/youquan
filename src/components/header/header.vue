@@ -1,14 +1,16 @@
 <template>
     <div class="header">
-        <div class="header_ logo"></div>
+        <div class="header_ logo">
+            <img src="@/assets/imgs/logo3.png" width="400" height="100"/>
+        </div>
+        <div class="header_ group_name">
+            <!--<h1>优荃电子</h1>-->
+        </div>
         <div class="header_ header_right">
             <div class="search">服务热线：13802570139
                 <Input search placeholder="请输入关键字"/>
             </div>
         </div>
-        <!--<span class="group_name">优荃电子</span>-->
-        <!--<div class="search"><input placeholder="请输入关键字" clearable/></div>-->
-
     </div>
 </template>
 
@@ -31,24 +33,26 @@
         /*background: aqua;*/
         height: 100px;
         margin-top: 10px;
+        width: 100%;
         .header_ {
             float: left;
             height: 100px;
         }
         .logo {
-            background: url("../../assets/imgs/logo.png") no-repeat;
-            width: 400px;
+        }
+        .group_name {
+            padding-top: 25px;
         }
         .header_right {
+            float: right;
         }
     }
-    .group_name {
-        font-size: 30px;
-        font-weight: bold;
-    }
+    /*.group_name {*/
+        /*font-size: 30px;*/
+        /*font-weight: bold;*/
+    /*}*/
     .search {
         margin-top: 50px;
-        margin-left: 175%;
         width: 200px;
         height: 100px;
     }
