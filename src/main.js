@@ -6,6 +6,7 @@ import iView from 'iview'
 import router from './router'
 import 'iview/dist/styles/iview.css';
 import BaiduMap from 'vue-baidu-map'
+import 'swiper/dist/css/swiper.css';
 
 // import '@/mock'
 // 实际打包时应该不引入mock

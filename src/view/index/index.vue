@@ -116,6 +116,7 @@
                     </div>
                 </div>
             </div>
+            <slide :imageList = imageLists :imgWidth = imgWidth :containerStyle= containerStyle></slide>
             <footerIndex></footerIndex>
             <div class="footer">
 
@@ -131,15 +132,41 @@
     import headerIndex from '@/components/header/header.vue'
     import navigateIndex from '@/components/navigate/navigate.vue'
     import carousel from '@/components/carousel/carousel.vue'
+    import slide from '@/components/slide/slide.vue'
     let productData = require('../product/product.json');
 
     export default {
         name: 'index',
         components:{
-            footerIndex, headerIndex, navigateIndex, carousel
+            footerIndex, headerIndex, navigateIndex, carousel, slide
         },
         data () {
             return {
+                imageLists:[
+                    {
+                        id:1
+                    },
+                    {
+                        id:1
+                    },
+                    {
+                        id:1
+                    },
+                    {
+                        id:1
+                    },
+                    {
+                        id:1
+                    },
+                    {
+                        id:1
+                    },
+                    {
+                        id:1
+                    }
+                ],
+                imgWidth: "0",
+                containerStyle: "0"
             }
         },
         methods:{
