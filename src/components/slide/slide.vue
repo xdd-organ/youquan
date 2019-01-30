@@ -90,7 +90,7 @@
         text-align: center;
         font-size: 18px;
         background: #fff;
-        width: 30%;
+        width: 220px;
         height:90%;
         display: -webkit-box;
         display: -ms-flexbox;
