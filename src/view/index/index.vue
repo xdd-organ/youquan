@@ -134,6 +134,7 @@
     import carousel from '@/components/carousel/carousel.vue'
     import slide from '@/components/slide/slide.vue'
     let productData = require('../product/product.json');
+    let silideData = require('./index.json');
 
     export default {
         name: 'index',
@@ -142,29 +143,7 @@
         },
         data () {
             return {
-                imageLists:[
-                    {
-                        id:1
-                    },
-                    {
-                        id:1
-                    },
-                    {
-                        id:1
-                    },
-                    {
-                        id:1
-                    },
-                    {
-                        id:1
-                    },
-                    {
-                        id:1
-                    },
-                    {
-                        id:1
-                    }
-                ],
+                imageLists:[],
                 imgWidth: "0",
                 containerStyle: "0"
             }
@@ -181,6 +160,7 @@
         },
         created: function () {
             this.productList = productData;
+            this.imageLists = silideData
         }
     }
 </script>

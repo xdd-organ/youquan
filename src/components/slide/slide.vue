@@ -2,17 +2,21 @@
     <div>
         <div class="swiper-container" :style="containerStyle">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="(item,index) in imageList" :key="index">Slide {{index}}</div>
+                <div class="swiper-slide" v-for="(item,index) in imageList" :key="index">
+                    <a :href="item.domain" target="_blank">
+                        <img :src="item.cover_url" height="80px" width="150px" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </template>
 <script>
     import Swiper from 'swiper';
-
     export default {
         data() {
             return {
+                swiper:null
             };
         },
         props:{
@@ -43,9 +47,27 @@
         mounted(){
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 'auto',
-                spaceBetween: 30,
-                autoplay:true,
+                spaceBetween: 0,
+                mousewheel: true,
+                loop:true,
+                observer:true,
+                observeParents:true,
+                autoplayDisableOnInteraction : false,
+                speed:4000,
+                autoplay: {
+                    delay: 1,
+                    autoplayDisableOnInteraction: false,
+                    waitForTransition: true,
+                },
             });
+        },
+        methods:{
+            enter(){
+                this.swiper.stopAutoplay();
+            },
+            leave(){
+                this.swiper.startAutoplay();
+            }
         }
     };
 </script>
@@ -62,6 +84,7 @@
         display: flex;
         align-items: center;
         text-align: justify;
+        transition-timing-function: linear;
     }
     .swiper-slide {
         text-align: center;
@@ -81,10 +104,10 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-        border:1px solid #dadada;
+        /*border:1px solid #dadada;*/
         box-sizing: border-box;
         img{
-            border:1px solid #dadada;
+            /*border:1px solid #dadada;*/
         }
     }
     .imgWidth{
