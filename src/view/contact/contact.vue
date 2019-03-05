@@ -16,19 +16,17 @@
                 <div class="contact_table_gszb">{{title}}</div>
                 <div class="company_table">
                     <div class="company_name">深圳市优荃电子有限公司</div>
-                    <li>公司地址：深圳市龙岗区坂田街道里浦街5号博兴楼C702</li>
+                    <li>公司地址：深圳市龙华新区民治街道民新社区民治大道241号民泰大厦525室</li>
                     <li>联系电话：13802570139</li>
                     <li>公司传真：0755-82240760</li>
                     <li>E-mail：249697983@qq.com</li>
-                    <div class="company_zt">附近站台：五和地铁站、大发埔油站等</div>
+                    <div class="company_zt">附近站台：民治地铁站、樟坑三区、横岭工业区等</div>
                     <div class="company_lx">途经线路：
-                        M301路、M395路、M398路、M415路、M447路、M567路、高峰专线169路
-                        313路、317路、391路、612路、M263路、M271路、M281路、M282路、
-                        M342路、M346路、M374路、M383路、M461路、M488路、M491路、M533路、M547路、M566路、高峰专线71路
+                        地铁5号线、M572路、B656路、高快巴士4号、M112路、M347路、M365路a环、M374路、M521路、M537路
                     </div>
-                    <baidu-map class="company_dt" :center="{lng: 114.06, lat: 22.630}" :zoom="14" scroll-wheel-zoom>
+                    <baidu-map class="company_dt" :center="{lng: 114.049, lat: 22.610}" :zoom="14" scroll-wheel-zoom>
                         <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
-                        <bm-marker :position="{lng: 114.0642, lat: 22.634}" :dragging="true" @click="infoWindowOpen">
+                        <bm-marker :position="{lng: 114.0486, lat: 22.6197}" :dragging="true" @click="infoWindowOpen">
                             <bm-info-window :show="show" @close="infoWindowClose" @open="infoWindowOpen">深圳市优荃电子有限公司</bm-info-window>
                         </bm-marker>
                     </baidu-map>
