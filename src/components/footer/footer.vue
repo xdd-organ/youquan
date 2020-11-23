@@ -1,6 +1,7 @@
 <template>
     <div class="copy">
-        <span>Copyright © 2019 深圳市优荃电子有限公司版权所有. All Rights reserved</span>
+        <span>Copyright © 2019 深圳市优荃电子有限公司版权所有. All Rights reserved   粤ICP备 </span>
+        <a href="https://beian.miit.gov.cn" target="_blank">19012143</a>
         <span style="float: right;color: #666;">热线电话：0755-82240760</span>
     </div>
 </template>
